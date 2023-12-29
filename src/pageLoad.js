@@ -19,6 +19,7 @@ home_div.className = 'option';
 home_div.id = 'home'
 
 menu_div.className= 'option';
+menu_div.id = 'menu';
 contact_div.className = 'option';
 
 //appending children
