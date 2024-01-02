@@ -15,7 +15,7 @@ function homePage(){
 
     //appending elements
     hotelInformation_div.appendChild(aboutHotel_div);
-    content.appendChild(hotelInformation_div)
+    content.appendChild(hotelInformation_div);
     
 }
 

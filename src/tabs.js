@@ -34,8 +34,8 @@ nav.appendChild(contact_div);
 content.appendChild(nav);
 
 home_div.addEventListener('click', event => {
-    alert('kibg')
-    homePage();
+   clearContent()
+   homePage();
     
 });
 
@@ -53,12 +53,16 @@ contact_div.addEventListener('click', event => {
 
 function clearContent() {
     const content = document.getElementById('content');
-    const contentChildren = document.querySelectorAll('#content div:nth-child(4) > *');
+    const menuPage_div = document.querySelector('.menu-page')
+    const contactContainer_div = document.querySelector('.contact-container');
+    const hotelInformation_div = document.querySelector('.hotel-information');
     
-    if (contentChildren.length > 0) {
-        contentChildren.forEach(child => {
-            content.removeChild(child);
-        });
+    if ( hotelInformation_div){
+        content.removeChild(hotelInformation_div)       
+    } else if(contactContainer_div){
+        content.removeChild(contactContainer_div)
+    }else if(menuPage_div){
+        content.removeChild(menuPage_div);
     }
 }
 

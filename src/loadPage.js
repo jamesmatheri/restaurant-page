@@ -4,6 +4,7 @@ import createTabs from "./tabs";
 
 function pageLoad(){
     createTabs();
+    homePage();
     
 }
 
